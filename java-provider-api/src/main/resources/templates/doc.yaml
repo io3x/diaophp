@@ -1,0 +1,86 @@
+# 多行文本模式 使用>或| 标记 |保留换行符
+# 多行详细说明请使用 more: |
+demotest:
+    title: 这是标题
+    url: 这是url地址
+    more: |
+        说明：
+        视频普通上传为了2个步骤 1.上传视频获取提取码 2.通过提取码获取转码后的视频和缩略图地址
+        步骤1:返回成功标识 识别ret="yes" 记住sn码 通过视频提取接口获取转码后的视频
+        {
+            "ret": "yes",
+            "msg": "ok",
+            "ser": "H-P",
+            "ticket": "0VE7N13EA5SLXI6N",
+            "info": {
+                "sn": "KLBW42UOQOVG55YR"
+            }
+        }
+    b_fds: |
+        access_token||授权码
+        tags[]||标签1
+        tags[]||标签2
+        tags[]||标签3
+    e_fds: |
+        isure||是否确定(11是,10否)
+
+
+demotest2:
+    title: 这是标题
+    url: 这是url地址
+    b_fds: |
+        access_token| |授权码
+        tags[]||标签1
+        tags[]|3333|标签2
+        tags[]||标签3
+    e_fds: |
+        isure||是否确定(11是,10否)
+
+
+demotest3:
+    title: 视频普通上传接口
+    url: https://xxx/upload/video/normal
+    more: |
+        说明：
+        视频普通上传为了2个步骤 1.上传视频获取提取码 2.通过提取码获取转码后的视频和缩略图地址
+        步骤1:返回成功标识 识别ret="yes" 记住sn码 通过视频提取接口获取转码后的视频
+        {
+            "ret": "yes",
+            "msg": "ok",
+            "ser": "H-P",
+            "ticket": "0VE7N13EA5SLXI6N",
+            "info": {
+                "sn": "KLBW42UOQOVG55YR"
+            }
+        }
+    b_fds: |
+        file||上传视频|file
+    e_fds: |
+        isure||是否确定(11是,10否)
+        ext||扩展内容|textarea
+
+java_sayhello:
+    title: 简单sayHello
+    url: /dubbo/java/sayHello
+    more: |
+        java调用java属于 java开发范畴,这里不做过多阐述
+
+php_swoole_get_local_ip:
+    title: java调用php 无参数
+    url: /dubbo/php/swoole_get_local_ip
+    more: |
+        接口地址
+
+php_shop_m1:
+    title: java调用php 有参数
+    url: /dubbo/php/shop_m1
+    more: |
+        接口地址
+
+php_shop_async_m1:
+    title: java调用异步php
+    url: /dubbo/php/shop_async_m1
+    more: |
+        接口地址
+
+

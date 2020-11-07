@@ -1,0 +1,34 @@
+{
+  "name": "crazyxman/hessian-parser",
+  "description": "A client library for the Hessian binary data parse.",
+  "keywords": [
+    "hessian",
+    "hessian-parse",
+    "protocol"
+  ],
+  "homepage": "https://github.com/crazyxman/hessian-parse",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "James Harris",
+      "email": "james.harris@icecave.com.au",
+      "homepage": "https://github.com/jmalloc"
+    },
+    {
+      "name": "Jinxi Wang",
+      "email": "crazyxman01@gmail.com",
+      "homepage": "https://github.com/crazyxman"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "icecave/chrono": "~1",
+    "icecave/collections": "~1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Icecave\\Flax\\": "src"
+    }
+  }
+}

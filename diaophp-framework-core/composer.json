@@ -1,0 +1,12 @@
+{
+  "require": {
+    "php": ">=7.1.0",
+    "crazyxman/hessian-parser": ">=1.0.0"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}

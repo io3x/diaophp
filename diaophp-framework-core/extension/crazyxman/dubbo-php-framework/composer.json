@@ -1,0 +1,16 @@
+{
+  "autoload": {
+    "files": [
+      "src/rpc/Common/Helper/Functions.php"
+    ],
+    "psr-4": {
+      "Dubbo\\": "src/rpc"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
